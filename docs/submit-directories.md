@@ -19,15 +19,15 @@
 | 目录站 | 提交方式 | 状态 | 链接 |
 |---|---|---|---|
 | llmstxthub.com | GitHub PR(自动) | ✅ 已提交 | https://github.com/thedaviddias/llms-txt-hub/pull/1544 |
-| directory.llmstxt.cloud | 表单(需邮箱) | ⏳ 待手动提交 | https://directory.llmstxt.cloud/submit |
-| llmstxt.site | 表单(需邮箱) | ⏳ 待手动提交 | https://llmstxt.site/submit |
+| llmstxt.site | 表单(Playwright 自动) | ✅ 已提交(2026-08-28) | https://llmstxt.site/submit |
+| directory.llmstxt.cloud | 表单 + Cloudflare 验证 | ⏳ 需手动(反自动化,无法代交) | https://directory.llmstxt.cloud/submit |
 
 ## directory.llmstxt.cloud 表单字段
 
 - Website / product name: `growth-guardrails`
 - Website URL: `https://everest-an.github.io/growth-guardrails-skill`
 - Category: `Developer tools`
-- Email: 你的邮箱(仅用于通知审核状态)
+- Email: `everest9812@gmail.com`
 - Social network: `GitHub`(可选)
 - Social username: `@everest-an`
 - Notes(可选):
@@ -36,22 +36,24 @@
   > CN/US/EU statute-level legal matrix, dark-pattern red lines, 18-item self-audit checklist.
   > Compatible with opencode, Claude Code, Cursor.
 - 提交类型:Standard(免费,1-3 个月审核)或 Fast track($29,48 小时)
+- ⚠️ 该站有 Cloudflare Turnstile 真人验证,自动化环境不渲染验证码,必须浏览器手动提交;字段已在上方列全。
 
 ## llmstxt.site 表单字段
 
 - Product Name: `growth-guardrails`
 - Website URL: `https://everest-an.github.io/growth-guardrails-skill`
 - Your Name: `everest-an`
-- Email Address: 你的邮箱
+- Email Address: `everest9812@gmail.com`
 - llms.txt URL: `https://everest-an.github.io/growth-guardrails-skill/llms.txt`
 - llms-full.txt URL: `https://everest-an.github.io/growth-guardrails-skill/llms-full.txt`
 - Additional Notes:
   > AI skill: software distribution & user-acquisition strategy with compliance guardrails.
   > Sourced case studies (AdBlock Plus / Acceptable Ads, Qihoo 360) + CN/US/EU legal matrix + 18-item self-audit.
+- ✅ 已提交(2026-08-28,Playwright 自动填表,跳转 /thankyou)
 
 ## 说明
 
 - GitHub Pages 站点(`everest-an.github.io/growth-guardrails-skill`)是三个目录站与 AI 引擎抓取 llms.txt 的统一入口;
   index.html 含 `rel="describedby"` 指向 /llms.txt,符合 llms.txt v2 规范的 link-relation 建议。
-- 若日后 llms-txt-hub PR 被合并,llmstxthub 会显示条目;剩余两个表单提交后建议将状态更新到本表。
+- 若日后 llms-txt-hub PR 被合并,llmstxthub 会显示条目;directory.llmstxt.cloud 需手动提交(Cloudflare 验证)。
 - llms-full.txt 由脚本拼接生成,内容变更后需重新生成(见 llms-full.txt 头部说明)。
