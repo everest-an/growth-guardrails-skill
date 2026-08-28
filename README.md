@@ -42,7 +42,7 @@ This is a standard `SKILL.md` skill directory — the repo root *is* the skill.
 
 ```bash
 # option A: clone into your skills folder
-git clone https://github.com/everest-an/growth-guardrails.git .opencode/skills/growth-guardrails
+git clone https://github.com/everest-an/growth-guardrails-skill.git .opencode/skills/growth-guardrails
 
 # option B: clone anywhere and register the path in opencode.json
 # { "skills": { "paths": ["/path/to/growth-guardrails"] } }
@@ -51,7 +51,7 @@ git clone https://github.com/everest-an/growth-guardrails.git .opencode/skills/g
 ### Claude Code / Cursor
 
 ```bash
-git clone https://github.com/everest-an/growth-guardrails.git ~/.claude/skills/growth-guardrails
+git clone https://github.com/everest-an/growth-guardrails-skill.git ~/.claude/skills/growth-guardrails
 ```
 
 ### Any AI / manual
