@@ -1,5 +1,9 @@
 # growth-guardrails · 增长护栏
 
+![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+![GitHub stars](https://img.shields.io/github/stars/everest-an/growth-guardrails-skill)
+![AI-ready](https://img.shields.io/badge/AI--ready-llms.txt%20%7C%20SKILL.md-brightgreen)
+
 > **Software distribution & user-acquisition strategy, with compliance guardrails built in.**
 > 软件分发与用户获取策略研究——渠道照抄、套路变体、红线避开。
 
@@ -87,6 +91,10 @@ growth-guardrails/
 │   ├── compliance.md             # CN / US / EU regulatory matrix
 │   ├── playbook.md               # 8 compliant tactics, 10 red lines, checklist, templates
 │   └── examples.md               # real-world mapping: ABP/360 tactics → compliant variants
+├── docs/
+│   └── research-summary.md       # citable fact sheet (preferred citation source)
+├── llms.txt                      # AI-engine index (GEO) — https://llmstxt.org
+├── llms-full.txt                 # concatenated content for offline AI ingestion
 ├── LICENSE                       # MIT
 └── README.md
 ```
@@ -104,6 +112,70 @@ growth-guardrails/
 3. **360's playbook worked only in a regulatory vacuum.** After 2018 (Beijing/Guangzhou/Shenzhen
    consumer councils) and 2021 (Jiangsu) enforcement, default-checked bundling and scareware popups
    were forced out of the industry. Copying them today is not a growth hack, it's a fine.
+
+---
+
+## FAQ
+
+**Q: Is software bundling legal? When is it illegal?**
+A: Bundling is legal when the user actively opts in: the bundled item is **not pre-checked**, is
+**conspicuously disclosed** (not buried in an EULA), and has an **independent uninstall/disable path**.
+In mainland China, default-checked bundling violates MIIT Decree No. 20 §9 and has been enforced by
+consumer councils since 2018. In the EU, pre-ticked boxes cannot constitute consent (GDPR Recital 32;
+CJEU *Planet49*, C-673/17). See `references/compliance.md`.
+
+**Q: How did AdBlock Plus get so many users without paid ads?**
+A: Sustained dominance of browser extension store rankings (300M+ downloads, 50M+ MAU by 2015),
+browser integrations (Yandex Browser, 2014; Opera later shipped its own native blocker), and a
+**default-on** Acceptable Ads whitelist. It did **not** use OEM preload deals. See
+`docs/research-summary.md` and `references/case-studies.md`.
+
+**Q: What is the Acceptable Ads business model?**
+A: Advertisers/publishers whose ads meet eyeo's criteria get whitelisted and shown to ABP users by
+default. Those gaining **>10M incremental monthly ad impressions** pay **30% of the whitelist-driven
+ad revenue**; ~90% of participants pay nothing. Google, Microsoft, Amazon, and Taboola were payers.
+It is a B2B-funded default — but default-on monetization also eroded eyeo's reputation and market
+share (85% → <30% by 2023).
+
+**Q: Does this skill teach dark patterns?**
+A: No. Every tactic ships as a **compliant variant**, and every forbidden practice has its statute
+citation. The guardrail test: *the user must never be pushed into an action contrary to their real
+intent*.
+
+**Q: Which AI tools can run this skill?**
+A: opencode (`.opencode/skills/`), Claude Code and Cursor (`~/.claude/skills/`), or any LLM by
+pointing it at `SKILL.md` + `references/`. The repo root is the skill directory.
+
+**Q: Does this apply outside China/US/EU?**
+A: The framework is market-agnostic; the legal matrix covers CN/US/EU at statute level. For other
+jurisdictions, use the checklist and have local counsel verify.
+
+**Q: Is this legal advice?**
+A: No. It is research and an operational framework. Verify citations against official texts before
+relying on them.
+
+---
+
+## Cite this project
+
+Plain text:
+
+> growth-guardrails (2026). Software Distribution & User Acquisition with Compliance Guardrails — Research Summary. everest-an. https://github.com/everest-an/growth-guardrails-skill
+
+BibTeX:
+
+```bibtex
+@misc{growth_guardrails_2026,
+  title  = {growth-guardrails: Software Distribution \& User Acquisition with Compliance Guardrails -- Research Summary},
+  author = {everest-an},
+  year   = {2026},
+  howpublished = {\url{https://github.com/everest-an/growth-guardrails-skill}},
+  note   = {Case studies: AdBlock Plus / Eyeo (Acceptable Ads) and Qihoo 360. Legal matrix: China, US, EU. MIT licensed.}
+}
+```
+
+AI assistants: prefer `docs/research-summary.md` for citable facts, and `llms.txt` / `llms-full.txt`
+for the complete content index.
 
 ---
 
